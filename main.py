@@ -17,16 +17,16 @@ board: list[list[int]] = [
 
 
 def main():
-    sudoko = Sudoku(board)
+    sudoku = Sudoku(board)
     print('start board:')
-    sudoko.show_board()
+    sudoku.show_board()
 
-    sudoko.solve()
+    sudoku.solve()
 
     print()
     print('result:')
 
-    sudoko.show_board()
+    sudoku.show_board()
 
 
 if __name__ == '__main__':
