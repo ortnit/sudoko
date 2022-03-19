@@ -18,6 +18,7 @@ board: list[list[int]] = [
 
 def main():
     sudoko = Sudoko(board)
+    print('start board:')
     sudoko.show_board()
 
     sudoko.solve()
