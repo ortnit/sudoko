@@ -24,9 +24,9 @@ board: list[list[int]] = [
     [0, 8, 0, 0, 0, 0, 0, 7, 0],
 ]
 
-sudoko = Sudoku(board)
-sudoko.solve()
-sudoko.show_board()
+sudoku = Sudoku(board)
+sudoku.solve()
+sudoku.show_board()
 ```
 
 this will lead to a result like that:
