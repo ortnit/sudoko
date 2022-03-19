@@ -52,10 +52,10 @@ class Sudoko:
     def _number_available(self, x: int, y: int, number: int) -> bool:
         """
         tests if nummer is available at the given coordinate, testing the row, column and box.
-        :param x:
-        :param y:
-        :param number:
-        :return:
+        :param x: x-coordinate
+        :param y: y-coordinate
+        :param number: the number to test for availability
+        :return: tests if the number is can be set and is available
         """
         return not self._number_in_box(x, y, number) \
                and not self._number_in_row(y, number) \
