@@ -1,4 +1,4 @@
-from lib.sudoko import Sudoko
+from lib.sudoku import Sudoku
 import logging
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s :: %(name)s :: %(levelname)s :: %(message)s')
@@ -17,7 +17,7 @@ board: list[list[int]] = [
 
 
 def main():
-    sudoko = Sudoko(board)
+    sudoko = Sudoku(board)
     print('start board:')
     sudoko.show_board()
 

@@ -1,16 +1,16 @@
 # Readme
 
-How to solve sudoko, brute forcing the numbers with a recursion.
+How to solve sudoku, brute forcing the numbers with a recursion.
 
 For input, we take a 2 dimensional list with integers, 
 representing the fields, while the value 0 represents an empty field.
 
-The `Sudoko::solve()` function will start the solving process, in the end
-solved board is stored inside the Sudoko instance and can be displayed using
-`Sudoko::show_board()`.
+The `Sudoku::solve()` function will start the solving process, in the end
+solved board is stored inside the Sudoku instance and can be displayed using
+`Sudoku::show_board()`.
 
 ```python
-from lib.sudoko import Sudoko
+from lib.sudoku import Sudoku
 
 board: list[list[int]] = [
     [0, 0, 5, 0, 0, 7, 0, 0, 0],
@@ -24,7 +24,7 @@ board: list[list[int]] = [
     [0, 8, 0, 0, 0, 0, 0, 7, 0],
 ]
 
-sudoko = Sudoko(board)
+sudoko = Sudoku(board)
 sudoko.solve()
 sudoko.show_board()
 ```

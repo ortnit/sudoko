@@ -3,7 +3,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-class Sudoko:
+class Sudoku:
     board: list[list[int]]
 
     def __init__(self, board):
